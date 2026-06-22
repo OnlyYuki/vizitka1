@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Александр Прибылов — Официальный сайт-визитка</title>
+    <style>
+        /* Базовые стили для темной темы в стиле минимализма */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: #121212; 
+            color: #e0e0e0; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.6;
+        }
+        
+        /* Главный экран */
+        header { 
+            padding: 80px 20px; 
+            text-align: center; 
+            background: #1f1f1f; 
+            border-bottom: 1px solid #2d2d2d;
+        }
+        
+        h1 { 
+            color: #ffffff; 
+            margin: 0; 
+            font-size: 2.5em; 
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        
+        header p {
+            color: #888888;
+            font-size: 1.2em;
+            margin: 10px 0 25px 0;
+        }
+        
+        /* Основной контейнер */
+        .container { 
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+        }
+        
+        section { 
+            margin-bottom: 50px; 
+        }
+        
+        h2 { 
+            border-bottom: 2px solid #2d2d2d; 
+            padding-bottom: 10px; 
+            color: #fff; 
+            font-size: 1.8em;
+        }
+        
+        /* Кнопки */
+        .btn { 
+            display: inline-block; 
+            background: #007acc; 
+            color: #fff; 
+            padding: 12px 24px; 
+            text-decoration: none; 
+            border-radius: 4px; 
+            font-weight: bold;
+            transition: background 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        
+        .btn:hover {
+            background: #0062a3;
+        }
+        
+        /* Таблица навыков */
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px; 
+            background: #1a1a1a;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        th, td { 
+            padding: 14px; 
+            text-align: left; 
+            border-bottom: 1px solid #2d2d2d; 
+        }
+        
+        th { 
+            background: #252525; 
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* Карточки портфолио */
+        .project-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 15px;
+            border: 1px solid #2d2d2d;
+        }
+        
+        .project-card h3 {
+            margin-top: 0;
+            color: #007acc;
+        }
+        
+        /* Форма обратной связи */
+        form {
+            display: flex; 
+            flex-direction: column; 
+            gap: 15px; 
+            max-width: 500px; 
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 6px;
+            border: 1px solid #2d2d2d;
+            margin-top: 20px;
+        }
+        
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-weight: 500;
+            color: #aaa;
+        }
+        
+        input, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            background: #252525; 
+            color: #fff; 
+            border: 1px solid #333; 
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #007acc;
+        }
+        
+        textarea {
+            height: 120px; 
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Прибылов Александр Алексеевич</h1>
+    <p>Оператор информационных систем и ресурсов | Разработчик</p>
+    <a href="#contacts" class="btn">Связаться со мной</a>
+</header>
+
+<div class="container">
+    
+    <!-- Раздел: О себе -->
+    <section>
+        <h2>О себе</h2>
+        <p>Занимаюсь комплексной настройкой информационных систем, обеспечением сетевой безопасности и оптимизацией программного обеспечения. Имею практический опыт администрирования локальных сетей, интеграции защищенных протоколов передачи данных и создания специализированных модулей на C++. Предпочитаю чистые интерфейсы, высокую производительность и строгую системную логику.</p>
+    </section>
+
+    <!-- Раздел: Навыки -->
+    <section>
+        <h2>Компетенции и технологии</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Сфера деятельности</th>
+                    <th>Технологический стек и навыки</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Разработка ПО</strong></td>
+                    <td>Язык C++, низкоуровневая оптимизация, анализ кода, UI/UX интерфейсы</td>
+                </tr>
+                <tr>
+                    <td><strong>Сетевые конфигурации</strong></td>
+                    <td>Развертывание прокси-решений (VLESS-Reality, MTProto), обход ограничений</td>
+                </tr>
+                <tr>
+                    <td><strong>Информационные системы</strong></td>
+                    <td>Администрирование ОС, аудит системного ПО, техническая документация</td>
+                </tr>
+                <tr>
+                    <td><strong>Инструменты & Media</strong></td>
+                    <td>GitHub, системы контроля версий, производство и монтаж медиаконтента</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Раздел: Проекты -->
+    <section>
+        <h2>Примеры деятельности</h2>
+        
+        <div class="project-card">
+            <h3>Разработка модулей на C++</h3>
+            <p>Проектирование и создание внешних и внутренних модулей с упором на быстродействие и эффективное взаимодействие с памятью процессов.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Сетевой инжиниринг</h3>
+            <p>Настройка защищенных туннелей в условиях жестких локальных ограничений сети провайдера (белые списки, DPI) для обеспечения стабильного доступа.</p>
+        </div>
+    </section>
+
+    <!-- Раздел: Контакты и Форма -->
+    <section id="contacts">
+        <h2>Обратная связь</h2>
+        <p>Вы можете отправить мне сообщение напрямую через форму ниже. Оно будет доставлено на мой рабочий email.</p>
+        
+        <form action="https://formspree.io/f/mykqywav" method="POST">
+            <label>
+                Ваш контактный Email:
+                <input type="email" name="email" placeholder="example@mail.ru" required>
+            </label>
+            
+            <label>
+                Текст сообщения:
+                <textarea name="message" placeholder="Введите ваше сообщение..." required></textarea>
+            </label>
+            
+            <button type="submit" class="btn">Отправить письмо</button>
+        </form>
+    </section>
+
+</div>
+
+</body>
+</html>
